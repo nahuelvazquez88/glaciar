@@ -8,11 +8,11 @@
     } 
     
     body{
-        background-image: url("imagenes2/madera\ rustica.jpg");
+        background-image: url("imagenes2/madera rustica.jpg");
         background-position: center;
         background-size: cover;
         background-color: rgb(2, 4, 5);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
         
        
      } 
@@ -54,18 +54,6 @@
               
             }
                  
-
-
-
-
-
-
-
-
-
-
-
-
     
      @keyframes movimiento{
         from{
