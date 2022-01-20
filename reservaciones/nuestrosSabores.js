@@ -1,3 +1,5 @@
+//Animacion con jquery
+$(".mediosDePago").hide();
 
 const mensajes = [
   'bienvenido',
@@ -26,7 +28,7 @@ const mensajes = [
  <li> 2-Belgium strong amber</li>
  <li>  3-Scotland lamb gods</li>
  <li>4-Slovakian herr hangunst </li></ol>
- <p id="parrafo">Choose the number of beer you want</p>`
+ <p id="parrafo"> Elige el número de cerveza que quieras </p>`
  menu.id = "createdElement" 
  menu2.appendChild(menu);
     
@@ -91,7 +93,7 @@ const mensajes = [
    
   }
       
-  //jQuery
+  //jQuery y al final con aninacion 
   input2.oninput =()=>{
     console.log(input2.value)
     console.log(cervezas)
@@ -100,7 +102,7 @@ const mensajes = [
       if(cerveza.id==input2.value){
         console.log(cerveza)
         let resultadoInput = $("#resultadoInput")
-        resultadoInput.html(`<p id="textoResultadoInput">La cerveza elegida es: ${cerveza.name}. El total a pagar es $${cerveza.precio}.</p><p id="parrafo">¿Cuántas cervezas querés?</p>
+        resultadoInput.html(`<p id="textoResultadoInput">La cerveza elegida es: ${cerveza.name}. El valor de esta cerveza es $${cerveza.precio}.</p><p id="parrafo">¿Cuántas cervezas querés?</p>
         <form action="" id="centrado2">  
         <input id="entrada3" type="number" placeholder="escriba un numero" >
         <input id="submit" type="submit" value="Enviar">
@@ -119,10 +121,43 @@ const mensajes = [
         let valorEntrada3 = entrada3[0].value
         let totalAPagar = valorEntrada3 * cerveza.precio
         resultadoInput2.html(`<p>El total es $${totalAPagar}.</p>`)
+        $(".mediosDePago").fadeIn(2000);
+
         })
       }
     }
   }
+
+//jQuerY,Ajax and API://
+const URLGET="https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6"
+
+$("#cervezasDelMundo").prepend('<button id="btn1">ver</button>')
+$("#btn1").click(()=>{
+  $.get(URLGET,function (respuesta , estado){
+  
+    if (estado ==='success'){
+      let misDatos = respuesta;
+      let index = 0;
+      $("#cervezasDelMundo").append(`<ol id="cervezasApi">`)
+        for(const dato of misDatos){
+          $("#cervezasApi").append(`<li>${index +=1 }-${dato.name}</li>`)
+        }
+        $("#cervezasDelMundo").append(`</ol>`)
+        $("#btn1").attr(`disabled`,`disabled`)  
+    }
+  })
+
+
+}
+)
+
+
+
+
+
+
+
+
   
   
   

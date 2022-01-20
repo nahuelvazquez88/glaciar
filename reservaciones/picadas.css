@@ -8,9 +8,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
     
 body{
-background-image: url("imagenes2/madera\ rustica.jpg");
+background-image: url("imagenes2/madera rustica.jpg");
 background-position: center;
-background-size: cover;
+background-size: contain;
 background-color: rgb(2, 4, 5);
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
               
@@ -245,14 +245,12 @@ transform: translateY(15%);
                     }
                      
 .cont-menu nav a{
-    
-display: block;
-text-decoration: none;
-padding: 25px;
-color: white;
-border-left: 5px solid transparent;
-transition: all 400ms ease;
-                        
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
 } 
                 
 .cont-menu nav a:hover{
