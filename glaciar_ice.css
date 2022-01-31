@@ -1,530 +1,384 @@
-
-  
-  
-  
-  
-
-*{ 
-
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	  
-	}
-	  
-	
-	body{
-	background-image: url("imagenes/madera rustica.jpg");
-	background-position: center;
-	background-size: contains;
-	background-color: black;
-	
-	background-attachment: fixed;
-		
-	} 
-	
-	.slider{
-	
-	width: 50%;
-	margin: auto auto 25px auto;
-	
-	}
-	
-	#textoslider{
-		background-color: black;
-		opacity: 0.7;
-		height: 100px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: 0 5px ;
-		width: 100%;
-	}
-	
-	#hdp {
-		color: #1bee14;
-		width: 90%;
-		text-align: center !important;
-		font-size: 1.1em;
-	}
-	
-	#hdpTitle{
-		margin-bottom: 0;
-		
-	}
-	
-	h1{
-		text-align: center;
-		color: rgb(236, 236, 236);
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	}
-	h2{
-	text-align: center;
-	width: auto;
-	color: #fff;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		
-	}
-	
-	h3{
-	color: white;
-	text-align: left;
-	margin: 1rem 4rem ;
-		  
-	}
-	
-	h4{
-	margin: 0;
-	text-align:   right;
-	color: white;
-		
-	font-family: cursive;
-		
-	}
-	#mensaje, #menu{
-	margin: auto;
-	margin-bottom: 15px;
-	color: #fff;
-	text-align: center;
-	}
-	#entrada{ 
-	text-align: center;
-	
-	}
-	
-	#centrado, #centrado2{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 5px auto 45px auto;
-	width: 250px;
-	flex-direction: column;
-	}
-	#parrafo, #textoResultadoInput{
-	color: wheat;
-	height: 30px;
-	  
-	}
-	
-	p{
-	margin:15px auto !important;
-	text-align: center;
-	display: table;
-	height: 130px;
-	width: 800px;
-	color: #FFF;
-	font-family:Arial, Helvetica, sans-serif;
-		
-	} 
-	
-	
-	figure img:hover{
-	-webkit-transform:scale(1.3) ;
-			
-			
-	}   
-	
-	.container .btn-menu .logo{
-		
-	float: left;
-	line-height: 70px;
-		  
-	}
-		   
-	.container .btn-menu label{
-		
-	color: rgb(230, 230, 230);
-	font-size: 25px;
-	cursor: pointer;
-	position: absolute;
-	left:  1%;
-	
-	}
-			
-	
-	.container-menu{
-		
-	position: absolute;
-	background: rgba(31, 29, 29, 0.5);
-			  
-	height: 100vh;
-	top:0 ;
-	left: 0;
-	transition: all 500ms ease;
-	opacity: 1;
-	visibility: visible;
-			  
-	}
-		   
-	.cont-menu{
-	width: 100%;
-	max-width: 256px;
-	background:#1d1919 ;
-	height: 134vh;
-	position:relative ;
-	transition: all 500ms ease;
-	transform: translateX(0%);
-	opacity: 3;
-				
-	}
-	#btn-menu{
-	display: none;
-	
-	}
-	
-	#btn-menu:checked ~.container-menu{
-		
-	opacity: 0;
-	visibility: hidden;
-				
-	}
-	
-	#btn-menu:checked ~.container-menu .cont-menu{
-	transform: translateY(-100%);
-			
-	}
-	
-	
-	.cont-menu nav{
-		
-	transform: translateY(15%);
-	}
-				
-	.cont-menu nav a{
-		
-	display: block;
-	text-decoration: none;
-	padding: 25px;
-	color: rgb(255, 255, 255);
-	border-left: 5px solid transparent;
-	transition: all 400ms ease;
-				  
-	}
-	
-	.cont-menu nav a:hover{
-	border-left: 5px solid rgb(168, 11, 98) ;
-	background: #1f1f1f;       
-	}
-	 
-	.cont-menu label{
-		
-	position: absolute;
-	right: 5px;
-	top: 10px;
-	color: rgb(255, 255, 255);
-	cursor: pointer;
-	font-size: 18px;
-				  
-	} 
-	
-	.portada{
-	width: 100%;
-	height: 500px;
-	background: url("imagenes/madera\ rustica.jpg");
-	background-size:100% ;
-	animation: movimiento 15s infinite linear alternate ;
-	background-repeat: no-repeat;
-						   
-	}
-	
-	
-	@keyframes movimiento{
-	from{
-	background-position: bottom left;
-				  
-	}
-				  
-	to{
-	background-position: top right;
-					  
-					  
-	}
-	} 
-		  
-	#figure{
-	width: 200px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	border: 3px solid rgb(168, 11, 98);
-					
-	-webkit-transition:-webkit-transform 0.5s ease-in-out 0.10s;  
-				
-	} 
-	
-	#figure2{
-	
-	width: 300px;
-	height: auto;
-	margin:6rem auto;
-	display: block;
-	border: 6px solid white;
-	-webkit-transition:-webkit-transform 0.5s ease-in-out 0.10s;
-			  
-			  
-			  
-	}
-			 
-	#figure2a{
-	
-	width: 200px;
-	height: auto;
-	margin: 2rem auto;
-	display: block;;
-	border: 9px solid white;
-	-webkit-transition:-webkit-transform 0.5s ease-in-out 0.10s;
-	
-	
-	}
-	
-	
-	 
-	#figuresponsor{
-	
-	width: 110px;
-	height: auto;
-	margin-right: 5px;
-	float: right;
-	display: inline-block;
-	border: 9px solid white;
-	-webkit-transition:-webkit-transform 0.5s ease-in-out 0.10s;
-	
-	}
-	
-	
-	figure img:hover{
-	-webkit-transform:scale(1.3) ;
-	  
-	  
-	}   
-	
-	
-	@import url('https://fonts.googleapis.com/css?family=Montserrat');
-	body {
-		background-color: #111;
-	}
-	
-	body {
-		background-color: #111;
-	}
-	
-	.title {
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: center;
-	color: #FFF;
-	display: flex;
-	flex-direction: 
-	column;
-	align-items: center;
-	justify-content: 
-	
-	center;
-	height: 100vh;
-	letter-spacing: 1px;
-	}
-	
-	
-	.white-mode {
-	text-decoration: none;
-	padding: 7px 10px;
-	background-color: #122;
-	border-radius: 3px;
-	color: #FFF;
-	transition: .35s ease-in-out;
-	position: absolute;
-	text-align: center;
-	bottom: 15px;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	}
-	
-	.white-mode:hover {
-	background-color: #FFF;
-	color: #122;
-	}
-	
-	
-	@media screen and (max-width:768px) { 
-	#figurespornsor{ 
-	width: 110px;
-	height: auto;
-	
-	flex-direction: column;
-	flex-wrap: wrap;
-	display: flex;
-	border: 9px solid white;
-	-webkit-transition:-webkit-transform 0.5s ease-in-out 0.10s;
-	
-	}
-	}
-	
-	
-	#neon{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: #111111;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-	}
-	a
-	{
-	position: relative;
-	display: inline-block;
-	padding: 15px 30px;
-	color: #ff1952;
-	text-transform:lowercase;
-	letter-spacing: 4px;
-	text-decoration:solid;
-	font-size: 24px;
-	overflow: hidden;
-	transition: 0.2s;
-	}
-	a:hover{
-	color: #258460;
-	background: #af2280;
-	box-shadow: 0 0 10px #8d26c9, 0 0 40px #cc0e9d, 0 0 80px #a812d6;
-	transition-delay: 1s;
-	}
-	a span{
-	position: absolute;
-	display: block;
-	}
-	a span:nth-child(1){
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, #4f21f3);
-	}
-	a:hover span:nth-child(1){
-	left: 100%;
-	transition: 1s;
-	}
-	a span:nth-child(3){
-	bottom: 0;
-	right: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(270deg, transparent, #21f3d0);
-	}
-	a:hover span:nth-child(3){
-	right: 100%;
-	transition: 1s;
-	transition-delay: 0.5s;
-	}
-	a span:nth-child(2){
-	top: -100%;
-	right: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(180deg, transparent, #9e16c7);
-	}
-	a:hover span:nth-child(2){
-	top: 100%;
-	transition: 1s;
-	transition-delay: 0.25s;
-	}
-	a span:nth-child(4){
-	bottom: -100%;
-	left: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(360deg, transparent, #21f3d0);
-	}
-	a:hover span:nth-child(4){
-	bottom: 100%;
-	transition: 1s;
-	transition-delay: 0.75s;
-	}
-  
-  
-  
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mohave", sans-serif;
+}
+
+body {
+  background-image: url("imagenes/madera rustica.jpg");
+  background-position: center;
+  background-size: contains;
+  background-color: black;
+
+  background-attachment: fixed;
+}
+
+.slider {
+  width: 50%;
+  margin: auto auto 25px auto;
+}
+
+#textoslider {
+  background-color: black;
+  opacity: 0.7;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  width: 100%;
+}
+
+#hdp {
+  color: #1bee14;
+  width: 90%;
+  text-align: center !important;
+  font-size: 1.1em;
+}
+
+#hdpTitle {
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(236, 236, 236);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+  text-align: center;
+  width: auto;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h3 {
+  color: white;
+  text-align: left;
+  margin: 1rem 4rem;
+}
+
+h4 {
+  margin: 0;
+  text-align: right;
+  color: white;
+  font-family: cursive;
+}
+#mensaje,
+#menu {
+  margin: auto;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+#entrada {
+  text-align: center;
+}
+
+#centrado,
+#centrado2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 45px auto;
+  width: 250px;
+  flex-direction: column;
+}
+#parrafo,
+#textoResultadoInput {
+  color: wheat;
+  height: 30px;
+}
+
+p {
+  font-size: 25px;
+  margin: 15px auto !important;
+  text-align: center;
+  display: table;
+  height: 130px;
+  width: 800px;
+  color: #fff;
+  font-family: "ABeeZee", sans-serif;
+}
+
+figure img:hover {
+  -webkit-transform: scale(1.3);
+}
+
+.container .btn-menu .logo {
+  float: left;
+  line-height: 70px;
+}
+
+.container .btn-menu label {
+  color: rgb(230, 230, 230);
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 1%;
+}
+
+.fa-bars {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 2%;
+}
+
+.container-menu {
+  position: absolute;
+  background: rgba(31, 29, 29, 0.5);
+
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 256px;
+  background: #1d1919;
+  height: 134vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(0%);
+  opacity: 3;
+}
+#btn-menu {
+  display: none;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateY(-100%);
+}
+
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+  border-left: 5px solid rgb(168, 11, 98);
+  background: #1f1f1f;
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.portada {
+  width: 100%;
+  height: 500px;
+  background: url("imagenes/madera\ rustica.jpg");
+  background-size: 100%;
+  animation: movimiento 15s infinite linear alternate;
+  background-repeat: no-repeat;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+
+  to {
+    background-position: top right;
+  }
+}
+
+#figure {
+  width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 3px solid rgb(168, 11, 98);
+
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+
+#figure2 {
+  width: 300px;
+  height: auto;
+  margin: 6rem auto;
+  display: block;
+  border: 6px solid white;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+
+#figure2a {
+  width: 200px;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  border: 9px solid white;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+
+#figuresponsor {
+  width: 110px;
+  height: auto;
+  margin-right: 5px;
+  float: right;
+  display: inline-block;
+  border: 9px solid white;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+
+figure img:hover {
+  -webkit-transform: scale(1.3);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  background-color: #111;
+}
+
+body {
+  background-color: #111;
+}
+
+.title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+}
+
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.35s ease-in-out;
+  position: absolute;
+  text-align: center;
+  bottom: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.white-mode:hover {
+  background-color: #fff;
+  color: #122;
+}
+
+@media screen and (max-width: 768px) {
+  #figurespornsor {
+    width: 110px;
+    height: auto;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    border: 9px solid white;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+  }
+}
+
+#neon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111111;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #ff1952;
+
+  letter-spacing: 4px;
+  text-decoration: solid;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+a:hover {
+  color: #258460;
+  background: #af2280;
+  box-shadow: 0 0 10px #8d26c9, 0 0 40px #cc0e9d, 0 0 80px #a812d6;
+  transition-delay: 1s;
+}
+a span {
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #4f21f3);
+}
+a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #21f3d0);
+}
+a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #9e16c7);
+}
+a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #21f3d0);
+}
+a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
